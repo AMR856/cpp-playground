@@ -72,11 +72,11 @@ MyString &MyString::operator++() {
   return *this;
 }
 
-MyString &MyString::operator++(int) {
-  // post-increment
-  MyString *temp{this};
-  MyString::operator++();
-  return *temp;
+MyString MyString::operator++(int) {
+  // Post increment
+  MyString temp{*this};
+  ++(*this);
+  return temp;
 }
 
 

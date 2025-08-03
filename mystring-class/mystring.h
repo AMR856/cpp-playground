@@ -30,7 +30,7 @@ public:
     MyString operator+(const MyString &rhs) const;
     MyString& operator+=(const MyString& rhs);
     MyString& operator++();
-    MyString& operator++(int);
+    MyString operator++(int);
     bool operator==(const MyString &rhs) const;
     bool operator!=(const MyString& rhs) const;
     bool operator<(const MyString& rhs) const;
